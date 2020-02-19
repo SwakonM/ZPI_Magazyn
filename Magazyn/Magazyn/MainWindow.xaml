@@ -15,12 +15,12 @@
             <ColumnDefinition Width="180"></ColumnDefinition>
             <ColumnDefinition Width="*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <Canvas Background="#2b2c36" Grid.Row="0" Grid.ColumnSpan="2">
-               <Label Foreground="White" FontSize="18" Margin="7" Content="Magazyn napojów:" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></Label>
+        <Canvas Background="#FF3542CB" Grid.Row="0" Grid.ColumnSpan="2">
+               <Label Foreground="White" FontSize="18" Margin="7" Content="Magazyn:" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF3542CB"></Label>
             
         </Canvas>
         <Label Name="labelUser" Foreground="White" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Right"></Label>
-        <Canvas Grid.Column="0" Grid.Row="1" Background="LightGray"></Canvas>
+        <Canvas Grid.Column="0" Grid.Row="1" Background="#FF3542CB"></Canvas>
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Column="0" Grid.Row="1">
             <Button Click="OrdersBtn" Margin="0 30 0 10" Width="120" Height="30">Zamowienia:</Button>
             <Button Click="CustomersBtn" Margin="10" Width="120" Height="30">Klienci:</Button>

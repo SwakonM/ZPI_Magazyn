@@ -15,7 +15,7 @@
             <ColumnDefinition Width="*"></ColumnDefinition>
             <ColumnDefinition Width="2*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <Canvas Background="#2b2c36" Grid.Row="0" Grid.ColumnSpan="2">
+        <Canvas Background="#FF3542CB" Grid.Row="0" Grid.ColumnSpan="2">
             <Label Foreground="White" FontSize="18" Margin="7" Content="Klienci:" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></Label>
         </Canvas>
         <StackPanel Grid.Row="1" Grid.Column="1" Margin="15">
@@ -23,7 +23,7 @@
             <ListBox Height="300" FontFamily="Courier New"  Name="listboxCustomers"></ListBox>
         </StackPanel>
 
-        <Canvas Grid.Column="0" Grid.Row="1" Background="#24252e"></Canvas>
+        <Canvas Grid.Column="0" Grid.Row="1" Background="#FF3542CB"></Canvas>
         <StackPanel Grid.Row="1" VerticalAlignment="Center" Width="200" >
            
             

@@ -118,8 +118,11 @@ namespace Magazyn
             else
             {
                 var sql = "INSERT INTO Klienci (Nazwa_Klienta, Numer_Kontaktowy, Adres) VALUES (@name, @number, @adress) ";
-                SqlConnection sqlConnection = new SqlConnection(@"Data Source=DESKTOP-1EFN2CA\SQLEXPRESS;" + "Initial Catalog=Magazyn;" + "Integrated Security=SSPI;");
-                sqlConnection.Execute(sql, new { name = customerName.Text, number = customerNumber.Text, adress = customerAdress.Text });
+                  RefCustomerList();
+               // SqlConnection sqlConnection = new SqlConnection(@"Data Source=DESKTOP-1EFN2CA\SQLEXPRESS;" + "Initial Catalog=Magazyn;" + "Integrated Security=SSPI;");
+                //sqlConnection.Execute(sql, new { name = customerName.Text, number = customerNumber.Text, adress = customerAdress.Text });
+                _sqlConnection.Execute(sql, new { name = customerName.Text, number = customerNumber.Text, adress = customerAdress.Text });
+            
                 RefCustomerList();
             }
             

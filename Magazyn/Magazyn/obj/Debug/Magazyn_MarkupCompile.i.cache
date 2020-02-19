@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\ASUS\source\repos\Magazyn\Magazyn\obj\Debug\
+C:\Users\Mati\Source\Repos\SwakonM\ZPI_Magazyn\Magazyn\Magazyn\obj\Debug\
 Magazyn
 none
 false
 DEBUG;TRACE
-C:\Users\ASUS\source\repos\Magazyn\Magazyn\App.xaml
+C:\Users\Mati\Source\Repos\SwakonM\ZPI_Magazyn\Magazyn\Magazyn\App.xaml
 51857772967
 2-257501662
-28630377124
-15-257940117
+25-631239254
+15-603602368
 CustomersWindow.xaml;EditWindow.xaml;LoginWindow.xaml;MainWindow.xaml;OrdersWindow.xaml;
 
-False
+True
 

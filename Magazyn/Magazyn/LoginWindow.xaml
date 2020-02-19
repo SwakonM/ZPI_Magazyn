@@ -6,17 +6,26 @@
         xmlns:local="clr-namespace:Magazyn"
         mc:Ignorable="d"
        Title="LoginPanelWindow" Height="400" Width="400" Background="#24252e">
-    <Grid>
-        <StackPanel Margin="20" Background="#24252e">
+    <Grid Background="#FF05118F">
+        <StackPanel Margin="20">
             <StackPanel Margin="20">
-                <Label Content="Panel logowania" FontSize="20" Foreground="White" HorizontalAlignment="Center" Margin="15"></Label>
+                <Label Content="Panel logowania" FontSize="24" Foreground="White" HorizontalAlignment="Center" Margin="15" FontFamily="Segoe UI Black"></Label>
                 <Separator Width="300" Background="White"></Separator>
                 <Label Content="Username:" Foreground="White" FontSize="15"></Label>
                 <TextBox Name="txtUsername" FontSize="20"></TextBox>
                 <Label Content="Password:" Foreground="White" FontSize="15"></Label>
                 <PasswordBox Name="txtPassword" FontSize="20"></PasswordBox>
                 <Label Name="errorLabel" Foreground="Red"></Label>
-                <Button Click="loginSubmitBtn" Content="Zaloguj" Margin="0 20" Height="30"></Button>
+                <StackPanel Orientation="Horizontal" >
+                    <Button Click="loginSubmitBtn" Content="Zaloguj" Margin="0 20" Width="203" Height="30" RenderTransformOrigin="0.5,0.5"/>
+                    <Separator Width="50"></Separator>
+                    <Image Height="60" Margin="0,0,152,0" Source="Security-Key-Security-icon.png" Width="49">
+                        <Image.OpacityMask>
+                            <ImageBrush ImageSource="Security-Key-Security-icon.png" Stretch="Uniform"/>
+                        </Image.OpacityMask>
+                    </Image>
+                </StackPanel>
+
             </StackPanel>
         </StackPanel>
     </Grid>

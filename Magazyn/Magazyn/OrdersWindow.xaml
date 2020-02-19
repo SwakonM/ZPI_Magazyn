@@ -17,12 +17,12 @@
             <ColumnDefinition Width="2*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
 
-        <Canvas Background="#2b2c36" Grid.Row="0" Grid.ColumnSpan="3">
+        <Canvas Background="#FF05118F" Grid.Row="0" Grid.ColumnSpan="3">
             <Label Foreground="White" FontSize="18" Margin="7" Content="Zamówienia:" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></Label>
         </Canvas>
 
         <ListBox FontFamily="Courier New" Margin="15" Grid.Row="1" Grid.Column="2" Name="listboxProducts"></ListBox>
-        <Canvas Grid.Column="0" Grid.Row="1" Background="#24252e"></Canvas>
+        <Canvas Grid.Column="0" Grid.Row="1" Background="#FF05118F"></Canvas>
         
         
         <StackPanel Grid.Row="1" VerticalAlignment="Center" Width="180" >
