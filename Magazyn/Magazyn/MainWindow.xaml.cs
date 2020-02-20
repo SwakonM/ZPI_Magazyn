@@ -162,5 +162,19 @@ namespace Magazyn
             ListBoxRefresh(comboSort.SelectedIndex);
             listbox.SelectedIndex = 0;
         }
+
+        private void ProduktsBtn(object sender, RoutedEventArgs e)
+        {
+            ProduktWindow produktWindow = new ProduktWindow();
+            produktWindow.Show();
+        }
+
+        private void DostawyBtn(object sender, RoutedEventArgs e)
+        {
+            DostawyWindow produktWindow = new DostawyWindow();
+            produktWindow.Show();
+        }
+
+      
     }
 }

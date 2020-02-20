@@ -1,0 +1,58 @@
+﻿<Window x:Class="Magazyn.DostawyWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Magazyn"
+        mc:Ignorable="d"
+        Title="DostawyWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+        <RowDefinition Height="50"></RowDefinition>
+        <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="2*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Canvas Background="#FF3542CB" Grid.Row="0" Grid.ColumnSpan="2">
+            <Label Foreground="White" FontSize="18" Margin="7" Content="Towar" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></Label>
+        </Canvas>
+        <StackPanel Grid.Row="1" Grid.Column="1" Margin="15">
+            <Label FontFamily="Courier New"  Name="labelTowars"></Label>
+            <ListBox Height="300" FontFamily="Courier New"  x:Name="listboxTowaries">
+             
+            </ListBox>
+        </StackPanel>
+
+        <Canvas Grid.Column="0" Grid.Row="1" Background="#FF3542CB"></Canvas>
+        <StackPanel Grid.Row="1" VerticalAlignment="Center" Width="200" >
+
+
+            <Label Content="Produkt" Foreground="White" FontSize="15"></Label>
+            <ComboBox x:Name="comboProdukt">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <Rectangle Fill="{Binding Nazwa_Produktu}" Width="16" Height="16" />
+                            <TextBlock Text="{Binding Nazwa_Produktu}" />
+                        </StackPanel>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
+            <Label Name="errorCustomerName" Foreground="Red"></Label>
+            <Label Content="Data dostawy" Foreground="White" FontSize="15" HorizontalAlignment="Right" Width="200"></Label>
+            <DatePicker    VerticalAlignment="Top" SelectedDateChanged="DatePicker_SelectedDateChanged"/>
+
+            <Label Name="errorAdres" Foreground="Red"></Label>
+            <Label Content="Ilosc:" Foreground="White" FontSize="15"></Label>
+            <TextBox x:Name="txtQuantity" FontSize="20"></TextBox>
+            <Label Content="Cena:" Foreground="White" FontSize="15"></Label>
+            <TextBox x:Name="txtCena" FontSize="20"></TextBox>
+            <Label Name="errorPhone" Foreground="Red"></Label>
+            <Button Click="addProduktBtn" Width="160" Height="30" Grid.Row="1" VerticalAlignment="Bottom" Content="Dodaj Towar"/>
+        </StackPanel>
+
+
+    </Grid>
+</Window>

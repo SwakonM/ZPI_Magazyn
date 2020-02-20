@@ -81,9 +81,9 @@ namespace Magazyn
             var sqll = "SELECT Z.*, K.* FROM Zamowienia Z INNER JOIN Klienci K ON Z.ID_Klienta = K.ID_Klienta";
             Zamowienia[] zam = _sqlConnection.Query<Zamowienia>(sqll).ToArray();
 
-            
 
             var sql = "SELECT DISTINCT Produkt.ID_Produktu, Nazwa_Produktu FROM Produkt RIGHT JOIN Towary ON Produkt.ID_Produktu = Towary.ID_Produktu";
+
 
             Produkt[] produkts = _sqlConnection.Query<Produkt>(sql).ToArray();
 

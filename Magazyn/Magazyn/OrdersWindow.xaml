@@ -27,7 +27,16 @@
         
         <StackPanel Grid.Row="1" VerticalAlignment="Center" Width="180" >
             <Label Content="Produkt:" Foreground="White" FontSize="15"></Label>
-            <ComboBox Name="comboProducts"></ComboBox>
+            <ComboBox Name="comboProducts">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <Rectangle Fill="{Binding Nazwa_Produktu}" Width="16" Height="16" Margin="0,2,5,2" />
+                            <TextBlock Text="{Binding Nazwa_Produktu}" />
+                        </StackPanel>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
             <Label Content="Ilosc:" Foreground="White" FontSize="15"></Label>
             <TextBox x:Name="txtQuantity" FontSize="20"></TextBox>
             <Label Name="errorQuan" Foreground="Red"></Label>
